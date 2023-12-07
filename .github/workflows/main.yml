@@ -10,4 +10,4 @@ jobs:
     name: Log commit message
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Author of PR is ${{ github.event.pull_request.user.login }}"
+      - run: echo "Author of PR is ${{ github.event.pull_request.user.login }} || ${{ github.actor }}"

@@ -1,0 +1,13 @@
+name: Package Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log:
+    name: Log commit message
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Author of PR is ${{ github.event.pull_request.user.login }}"

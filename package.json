@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ls-im/itest0#readme",
   "dependencies": {
+    "@instamotion/insta-vehicle-data": "^2.7.27",
     "loadsh": "^0.0.4"
-  }
+  },
+  "type": "module"
 }

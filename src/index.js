@@ -1,3 +1,8 @@
+import { mobile} from '@instamotion/insta-vehicle-data';
+
 function main() {
-    return "itest";
+    
+    return mobile.de.refdata;
 }
+
+console.log(main())

@@ -1,0 +1,26 @@
+{
+  "name": "diff",
+  "version": "0.0.0",
+  "description": "diff package",
+  "author": "lucianS <l.stoica.extern@instamotion.com>",
+  "homepage": "https://github.com/ls-im/itest0/tree/main/packages/diff#readme",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls-im/itest0.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/diff.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ls-im/itest0/issues"
+  }
+}

@@ -20,5 +20,6 @@
     "downlevelIteration": true
   },
   "exclude": ["../node_modules", "../dist"],
-  "include": ["./index.ts"]
+  "include": ["./src/index.ts"]
+
 }

@@ -18,7 +18,8 @@
     "url": "git+https://github.com/ls-im/itest0.git"
   },
   "scripts": {
-    "test": "node ./__tests__/diff.test.js"
+    "test": "node ./__tests__/diff.test.js",
+    "tsc": "tsc"
   },
   "bugs": {
     "url": "https://github.com/ls-im/itest0/issues"

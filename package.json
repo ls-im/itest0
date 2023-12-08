@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/ls-im/itest0#readme",
   "dependencies": {
- 
     "loadsh": "^0.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }

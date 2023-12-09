@@ -19,7 +19,8 @@
   },
   "scripts": {
     "test": "node ./__tests__/diff.test.js",
-    "tsc": "tsc"
+    "compile": "tsc",
+    "dev": "npm run compile && node ./dist/index.js"
   },
   "bugs": {
     "url": "https://github.com/ls-im/itest0/issues"

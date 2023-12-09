@@ -2,3 +2,4 @@
 notes.md
 /packages/**/dist/*
 /dist
+/packages/**/src/schema/*

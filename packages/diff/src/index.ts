@@ -1,6 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
-
+import Sum from "sum";
 
 const books = [
     {
@@ -43,6 +43,7 @@ const server = new ApolloServer({
   });
   
 async function  main() {
+
     const { url } = await startStandaloneServer(server, {
       listen: { port: 4000 },
     });
@@ -51,7 +52,8 @@ async function  main() {
 }
 
 main().then((url: string) => {
-
+    const sum = new Sum(1, 2);
+    console.log(`1+2= ${sum.calc}`);
     console.log(`🚀  Server ready at: ${url}`);
 }).catch((err) => {
     console.log(err, ' not able to start the server');

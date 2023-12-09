@@ -20,9 +20,13 @@
   },
   "scripts": {
     "test": "node ./__tests__/sum.test.js",
-    "compile": "tsc"
+    "compile": "tsc",
+    "dev": "ts-node src/dev"
   },
   "bugs": {
     "url": "https://github.com/ls-im/itest0/issues"
+  },
+  "dependencies": {
+    "diffz": "file:../diff"
   }
 }

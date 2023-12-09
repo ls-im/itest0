@@ -1,6 +1,5 @@
 import { ApolloServer } from '@apollo/server';
-import { startStandaloneServer } from '@apollo/server/standalone';
-import Sum from "sum";
+export * from './generated/graphql-types';
 
 const books = [
     {
@@ -31,31 +30,13 @@ const typeDefs = `#graphql
 `;
 
 
-const resolvers = {
+export const resolvers = {
     Query: {
         books: () => books,
     }
 }
 
-const server = new ApolloServer({
+ export const server = new ApolloServer({
     typeDefs,
     resolvers,
   });
-  
-async function  main() {
-
-    const { url } = await startStandaloneServer(server, {
-      listen: { port: 4000 },
-    });
-
-    return url;
-}
-
-main().then((url: string) => {
-    const sum = new Sum(1, 2);
-    console.log(`1+2= ${sum.calc}`);
-    console.log(`🚀  Server ready at: ${url}`);
-}).catch((err) => {
-    console.log(err, ' not able to start the server');
-});
-  

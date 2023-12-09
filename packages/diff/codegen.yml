@@ -1,0 +1,11 @@
+schema: src/schema/**/*.graphql
+generates:
+  ./src/generated/graphql-types.ts:
+    plugins:
+      - add:
+         content:
+          - '/* tslint:disable */'
+      - typescript
+      - typescript-resolvers
+    config:
+      defaultMapper: any

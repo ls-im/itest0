@@ -20,7 +20,8 @@
   "scripts": {
     "test": "node ./__tests__/diff.test.js",
     "compile": "tsc",
-    "dev": "npm run compile && node ./dist/index.js"
+    "dev": "ts-node src/index",
+    "gen:gql": "graphql-codegen"
   },
   "bugs": {
     "url": "https://github.com/ls-im/itest0/issues"

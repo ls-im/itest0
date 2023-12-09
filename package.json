@@ -27,6 +27,11 @@
     "loadsh": "^0.0.4"
   },
   "devDependencies": {
+    "@graphql-codegen/add": "^5.0.0",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-graphql-files-modules": "^3.0.0",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
     "@types/node": "^20.10.4",
     "lerna": "^8.0.0",
     "ts-node": "^10.9.2",
